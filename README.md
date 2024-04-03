@@ -1,3 +1,7 @@
+## **Use 'Code' view in Github por a better visualization**
+
+
+
 # ML_Project - Credit Score Classification (ES)
 
 My first personal Machine Learning project. 04/2024
