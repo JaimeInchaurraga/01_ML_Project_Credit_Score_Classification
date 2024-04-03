@@ -34,6 +34,9 @@ mi_proyecto_ml/
 README.md                     # Documento que explica el proyecto y su estructura básica
 
 
+--> **IMPORTANTE** random_forest_v5.joblib, tiene un tamaño muy grande por lo que está en formato ZIP ya que Github no deja subirlo con más de 100 MB
+
+
 -----------------------------------------------------------------
 
 # ML Project - Credit Score Classification (EN)
