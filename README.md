@@ -1,4 +1,4 @@
-## **Use 'Code' view in Github por a better visualization**
+## **Use 'Code' view on Github for a better visualization**
 
 
 
