@@ -4,7 +4,7 @@
 
 # ML_Project - Credit Score Classification (ES)
 
-My first personal Machine Learning project. 04/2024
+My primer trabajo personal de Machine Learning. 04/2024
 
 Descripción del proyecto:
 
@@ -31,11 +31,14 @@ mi_proyecto_ml/
 │   ├── credit_score_classification.ipynb   # Notebook principal de clasificación de credit score --> todo el proceso de principio a fin y totalmente funcional (*versión limpia*)
 │   ├── ml_project_guide.ipynb              # Guía del proyecto de ML 
 │   └── model_testing.ipynb                # Notebook para probar y comparar diferentes modelos
+|
+| ppt/
+|    └── ML_Credit_Scoring_ppt.pptx          # Presentación resumen del proyecto
 │
 └── scripts/                   # Scripts de Python
     └── utilities.py          # Funciones utilizadas a través del proyecto 
 
-README.md                     # Documento que explica el proyecto y su estructura básica
+README.md                     # Documento que explica el proyecto y la estrctura del directorio
 
 
 --> **IMPORTANTE** random_forest_v5.joblib, tiene un tamaño muy grande por lo que está en formato ZIP ya que Github no deja subirlo con más de 100 MB
@@ -74,6 +77,10 @@ my_ml_project/
 │   ├── credit_score_classification.ipynb # Main notebook of credit score classification —> the whole process from start to end and fully functional (clean version)
 │   ├── ml_project_guide.ipynb           # Guide for the ML project
 │   └── model_testing.ipynb              # Notebook for testing and comparing different models
+|
+|
+|ppt/
+|        └── ML_Credit_Scoring_ppt.pptx # Project overview presentation
 │
 └── scripts/                    # Python scripts
     └── utilities.py           # Utility functions used throughout the project for specific or repetitive tasks
