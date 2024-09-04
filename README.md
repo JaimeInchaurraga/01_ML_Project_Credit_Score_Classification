@@ -1,62 +1,41 @@
-## **Use 'Code' view on Github for a better visualization**
-
-
-
-# ML_Project - Credit Score Classification (ES)
-
-My primer trabajo personal de Machine Learning. 04/2024
-
-Descripción del proyecto:
-
-Mediante la información financiera de una persona, un banco es capaz de realizar un credit scoring y de esa manera clasificar a sus clientes con diferentes puntuajes para determinar si son aptos para un préstamo o no.  
-- **El problema está en que actualmente este proceso está siendo realizando a través de métodos manuales en el que se destinan muchos recursos.**  
-- **El objetivo es el de automatizar este proceso para aumentar la eficiencia y reducir los costes de la entidad bancaria.**    
-- **Para abordar el problema de negocio, se llevará a cabo un estudio y procesado de los datos para posteriomente aplicar una serie de modelos supervisados multiclase para finalmente seleccionar aquel que obtenga mejor rendimiento.**
-
-Directorio:
-
-mi_proyecto_ml/
-│
-├── data/                      # Carpeta para los conjuntos de datos
-│   ├── clean_data.csv         # Datos ya procesados y limpios para ser utilizados directamente en los modelos
-│   ├── test.csv               # Datos separados para probar los modelos y evaluar su rendimiento --> sin variable 'y' por lo que no se pueden obtener las métricas al usarlos
-│   ├── train.csv              # Conjunto de datos original sin procesar para entrenar los modelos 
-│   ├── X_train_sample.csv     # Muestra del conjunto de entrenamiento de las variables independientes
-│   └── y_train_sample.csv     # Muestra del conjunto de entrenamiento de la variable dependiente (Credit Score)
-│
-├── models/                    # Modelos entrenados (**se incluirán más*)
-│   └── random_forest_v5.joblib   # Modelo de Random Forest seleccionado como el favorito (*por el momento*)
-│
-├── notebooks/                 # Jupyter Notebooks
-│   ├── credit_score_classification.ipynb   # Notebook principal de clasificación de credit score --> todo el proceso de principio a fin y totalmente funcional (*versión limpia*)
-│   ├── ml_project_guide.ipynb              # Guía del proyecto de ML 
-│   └── model_testing.ipynb                # Notebook para probar y comparar diferentes modelos
-|
-| ppt/
-|    └── ML_Credit_Scoring_ppt.pptx          # Presentación resumen del proyecto
-│
-└── scripts/                   # Scripts de Python
-    └── utilities.py          # Funciones utilizadas a través del proyecto 
-
-README.md                     # Documento que explica el proyecto y la estrctura del directorio
-
-
---> **IMPORTANTE** random_forest_v5.joblib, tiene un tamaño muy grande por lo que está en formato ZIP ya que Github no deja subirlo con más de 100 MB
-
-
------------------------------------------------------------------
 
 # ML Project - Credit Score Classification (EN)
 
 My first personal Machine Learning project. 04/2024
 
-Project Description:
+Pandaland ML Project: Credit Score Classification
 
-Through a person's financial information, a bank is capable of performing credit scoring and thus classifying its clients with different scores to determine whether they are eligible for a loan or not.
+Introduction
 
-- **The problem is that currently this process is being done manually, utilizing many resources.**
-- **The goal is to automate this process to increase efficiency and reduce costs for the banking entity.**
-- **To address the business problem, a study and processing of the data will be carried out, followed by the application of a series of supervised multi-class models to ultimately select the one that achieves the best performance.**
+In the world of finance, accurately classifying clients based on their creditworthiness is essential for optimizing loan decisions. Pandaland, a leading financial institution, was facing inefficiencies in their manual credit scoring process. To address this, Jaime Inchaurraga led the development of an automated solution using machine learning to streamline client credit classification, improving the decision-making process and reducing costs.
+Problem Statement
+
+Pandaland required a robust, automated system to replace their manual classification methods, which consumed extensive resources. The goal was to develop a multi-class classification model that could categorize clients into one of three credit score groups: Poor, Standard, and Good, allowing for more efficient loan approvals.
+Dataset
+
+The dataset used in this project consisted of 100,000 client records and included 28 variables. The following preprocessing steps were applied:
+Missing Data Imputation: Handled using median for numerical variables and mode for categorical variables.
+Outlier Detection: Extreme values were identified and managed using quantiles.
+Data Cleaning: Correction of errors such as negative values and errant categories.
+Feature Engineering: Essential transformations like encoding categorical variables, feature scaling, and dimensionality reduction.
+Modeling Approach
+
+Various models were tested to determine the best fit for the multi-class classification problem, including:
+Logistic Regression
+Naive Bayes
+Random Forest
+XGBoost
+Initial testing highlighted overfitting and underfitting issues with some models. However, Random Forest proved the most promising, offering a balance between model complexity and accuracy after parameter tuning.
+Key Results
+
+Random Forest: Achieved a training accuracy of 95% and test accuracy of 79% after applying cross-validation and synthetic data balancing techniques (SMOTE).
+Class Performance:
+Class 0 (Poor): High precision, often confused with Class 1.
+Class 1 (Standard): Best model performance, with minimal confusion.
+Class 2 (Good): Low false negatives, rarely confused with other classes.
+Conclusion
+
+This project successfully developed a machine learning model to automate credit score classification for Pandaland. While the model provides solid performance, particularly for Class 1 (Standard), future work will focus on further reducing overfitting and improving the classification accuracy for Class 0 and Class 2.
 
 
 Directory:
