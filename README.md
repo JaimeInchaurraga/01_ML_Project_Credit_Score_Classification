@@ -39,29 +39,5 @@ This project successfully developed a machine learning model to automate credit 
 
 
 Directory:
+![Credit Score Flowchart](ppt/flujograma%20directorio%20credit%20score%20classification.png)
 
-my_ml_project/
-│
-├── data/                       # Folder for data sets
-│   ├── clean_data.csv          # Data processed and clean, ready to be used directly in models
-│   ├── test.csv                # Data separated for testing models and assessing their performance —> without 'y' variable so metrics cannot be obtained when using them
-│   ├── train.csv               # Original data set, unprocessed for training models
-│   ├── X_train_sample.csv      # Sample of the training set of independent variables
-│   └── y_train_sample.csv      # Sample of the training set of the dependent variable (Credit Score)
-│
-├── models/                     # Trained models (more will be included)
-│   └── random_forest_v5.joblib # Random Forest model chosen as the current favorite (for the moment)
-│
-├── notebooks/                  # Jupyter Notebooks
-│   ├── credit_score_classification.ipynb # Main notebook of credit score classification —> the whole process from start to end and fully functional (clean version)
-│   ├── ml_project_guide.ipynb           # Guide for the ML project
-│   └── model_testing.ipynb              # Notebook for testing and comparing different models
-|
-|
-|ppt/
-|        └── ML_Credit_Scoring_ppt.pptx # Project overview presentation
-│
-└── scripts/                    # Python scripts
-    └── utilities.py           # Utility functions used throughout the project for specific or repetitive tasks
-
-README.md                      # Document that explains the project, how to run it, its basic structure and other important details
